@@ -1,7 +1,5 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
-    id("com.google.devtools.ksp") version "1.9.22-1.0.17"
 }
 
 android {
@@ -36,8 +34,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.room:room-runtime:2.8.4")
-    ksp("androidx.room:room-compiler:2.8.4")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
